@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-
-import DefaultGoogleImg from "../../src/stock-vector-many-rainbow-gradient-random-bright-soft-balls-background-colorful-balls-background-for-kids-zone-2274412231.jpg";
+import { ApiResultContext } from '../context/apiResultsContext';
 
 import "./style.css";
 
-const Images = ({ imageResult }) => {
+const Images = () => {
+  const {imageResult  } = useContext(ApiResultContext);
   const { items } = imageResult?.data;
 
   function srcset(image, size, rows = 1, cols = 1) {
