@@ -1,0 +1,99 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.google-searchbar {
+    /* Width */
+    width: 60vh;
+  
+    /* Margin */
+    margin: 0 auto;
+  
+    /* Padding */
+    padding: 10px;
+  
+    /* Border */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  
+    /* Font */
+    font-family: sans-serif;
+    font-size: 16px;
+  
+    /* Other */
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png")  no-repeat scroll 10px 10px;
+    padding-left:40px;
+    background-size: 20px;
+
+  }
+  
+  .google-searchbar:focus {
+    /* Border color */
+    border-color: #000;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+  }
+
+  .search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .results-google-search {
+    display: flex;
+    padding: 60px 0 0 100px;
+  }
+
+  .chip-container {
+    padding-left: 245px;
+    padding-top: 15px;
+  }
+
+  .chip {
+    margin-right: 5px;
+  }
+
+  .google-img {
+    margin-right:15px;
+  }
+
+  .google-search-card-container {
+    padding-left: 245px;
+    padding-top: 15px;
+  }
+
+  .google-search-card {
+    box-shadow: none !important;
+  }
+
+  .image-list {
+    padding: 20px 60px 0 240px;
+  }
