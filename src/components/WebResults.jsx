@@ -8,7 +8,6 @@ const WebResults = ({chipSelected}) => {
     const { result  } = useContext(ApiResultContext);
     const {data} = result.data;
 
-    console.log(chipSelected);
   return (
     <>
     {chipSelected === "Images" ? (

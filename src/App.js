@@ -3,7 +3,7 @@ import { ApiResultContext } from "./context/apiResultsContext";
 
 import HomePage from "./components/HomePage";
 import Results from "./components/Results";
-import Images from "./components/Images";
+
 import { getResults } from "./api/resultsApi";
 import { getImageResults } from "./api/imageApi";
 
@@ -12,7 +12,7 @@ function App() {
   const [imageResult, setImageResult] = useState("");
   const [search, setSearch] = useState("");
   const [isResultVisible, setIsResultVisible] = useState(false);
-  const [chipSelected, setChipSelected] = useState("Web");
+
 
   const callApi = async () => {
     await getResults(search).then((data) => {
@@ -33,15 +33,12 @@ function App() {
           imageResult,
           callApi,
           setSearch,
-          chipSelected,
         }}
       >
         {isResultVisible ? (
           <Results
             result={result}
             imageResult={imageResult}
-            chipSelected={chipSelected}
-            setChipSelected={setChipSelected}
           />
         ) : (
           <HomePage callApi={callApi} search={search} setSearch={setSearch} />
